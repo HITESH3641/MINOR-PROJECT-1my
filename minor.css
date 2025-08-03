@@ -1,0 +1,276 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+   
+}
+
+
+
+.mainbox{
+ background-image: url("photo.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    height:100vh;
+    
+    
+}
+
+.bt3{
+       display: inline;
+       color: aliceblue;
+       position: absolute;
+       left:90%;
+       top:20px;
+ 
+}
+
+.bt4{
+       display: inline;
+       color: aliceblue;
+       position: absolute;
+       left:55%;
+       top:20px;
+ 
+}
+.show{
+    display: inline-block;
+}
+
+.show h1{
+    font-size: 50px;
+    margin-left: 40%;
+    height: fit-content;
+    width:fit-content;
+    display: inline;
+    font-style: normal;
+    /* opacity: 0.8; */
+    position: absolute;
+       left: -300px;
+       top:0px;
+    
+}
+.show p{
+    color:aliceblue;
+    height:fit-content;
+    background-color: black;
+    width: 300px;
+    border: gray;
+    margin-left: 20%;
+    opacity: 0.8;
+    position: absolute;
+       left:0%;
+       top:-1000px;
+       transition: top 2.5s linear 0.4s;
+       transition: 2.5s;
+       font-family: 'Times New Roman', Times, serif;
+       
+      
+       
+    
+}
+
+.sidebar-menu{
+   position: fixed;
+   left: -400px;
+   top: 10px;
+   
+    width:300px;
+    height:100vh;
+    color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px aliceblue;
+    transition: 1.5s;
+   
+    
+}
+
+.bt1{
+        color: aliceblue;
+        position: absolute;
+        left:16px;
+        line-height: 16px;
+        top:8px;
+        cursor: pointer;
+        
+}
+.bt2 i {color: aliceblue;
+        position: absolute;
+        left:250px;
+        line-height: 10px;
+        top:17px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: 2s;
+
+}
+
+.bt2 i:hover{
+    transform:scale(1.2);
+}
+
+
+
+
+.sidebar-menu .logo{
+        position: relative;
+        left:70px;
+        line-height: 40px;
+
+
+}
+
+.sidebar-menu i ,a{
+    color: aliceblue;
+    padding-left: 15px;
+    text-decoration: none;
+    
+}
+
+
+.sidebar-menu li{
+    
+    margin-top: 20px;
+    padding:5px 10px;
+
+   
+    border:1px solid rgba(255, 255, 255, 0.12) ;
+}
+
+.sidebar-menu li:hover{
+    
+    box-shadow: 0px 0px 8px aliceblue;
+}
+
+.social h3{
+    line-height: 40px;
+}
+
+.social i{
+    font-size: 20px;
+}
+
+
+.social li{
+   
+    display: inline-block;
+    border: none;
+    opacity:0.5;
+    padding:1px;
+    margin:0px
+    
+}
+.social li:hover{
+    box-shadow: none;
+    transform: scale(1.2);
+    opacity:1;
+}
+#check,#tick2{
+    display: none;
+    
+}
+
+#check:checked ~ .sidebar-menu{
+    left:0;
+
+}
+#check:checked ~ .bt1{
+    opacity:0;
+
+}
+.animal{
+    position: absolute;
+    top:0px;
+    width: 5%;
+    height: 100vh;
+    background-color: #006466;
+    background-repeat: repeat-y;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    opacity: 1;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    transition:4s;
+    transition-timing-function: ease-in-out;
+    opacity:0;
+    
+}
+h1{
+    width:200px;
+    height:100px;
+    font-size: 80px;
+    display: inline-block;
+    align-items: top;
+    color: #dee2ff;
+}
+
+
+
+.gallery h3{
+    font-size: 50px;
+    color: white;
+}
+
+#dog{
+    width: 400px;
+    height: 400px;
+    border: 2px solid wheat;
+    display: inline-flex;
+    border-radius: 10px;
+    /* margin-top: 130px; */
+    margin: 120px 0px 10px -250px;
+    }
+#dog img{
+    height:80%
+}
+#cat{
+   width: 400px;
+    height: 400px;
+    border: 2px solid wheat;
+    display: inline-flex;
+    border-radius: 10px;
+margin: 120px 0px 10px 0px;    
+}
+#hi{
+    width: 400px;
+    height: 400px;
+    border: 2px solid wheat;
+    display: inline-flex;
+    border-radius: 10px;
+margin: 120px 0px 10px 0px;    }
+/* #by{
+    width: 400px;
+    height: 400px;
+    border: 2px solid wheat;
+    display: inline-flex;
+    border-radius: 10px;
+    margin: 120px 0px 10px 0px;   
+    align-items: start; 
+} */
+#tick1{display:none;}
+ 
+
+#tick1:checked ~ .animal{
+    opacity:1;
+    z-index: 5; 
+width:100%;   } 
+
+@media(orientation:portrait){
+       .mainbox{
+    background-image: url("photo.jpg");
+    background-size: cover;
+    background-position-x: 70%;
+    height:100vh;
+    
+}
+
+}
+#tick2:checked ~ p{
+    top:100px;
+    width: 600px;
+   } 
